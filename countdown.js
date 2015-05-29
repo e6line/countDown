@@ -21,22 +21,21 @@ countDown.prototype.countDownHandle = function(){
     that.timer = setTimeout(function () {
       that.countDownHandle(that.seconds, that.ProcessCallBack, that.EndCallBack);
     }, 1000);
-    that.ProcessCallBack();
+    that.ProcessCallBack(that.seconds);
   }else{
     that.EndCallBack();
   }
-};
+}
 
-
-  // var a = new countDown(10, function () {
-  //   console.log(1);
+  // var a = new countDown(10, function (s) {
+  //   console.log(s);
   // }, function () {
   //   console.log(2);
   // });
   // a.countDownHandle();
 
-  // var b = new countDown(10, function () {
-  //   console.log(3);
+  // var b = new countDown(10, function (s) {
+  //   console.log(s);
   // }, function () {
   //   console.log(4);
   // });
