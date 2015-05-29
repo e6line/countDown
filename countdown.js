@@ -1,3 +1,10 @@
+
+var console = console || {
+    log : function(){
+        return false;
+    }
+};
+
 function countDown(seconds, ProcessCallBack, EndCallBack){
   this.seconds = seconds;
   this.ProcessCallBack = ProcessCallBack;
