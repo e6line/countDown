@@ -1,3 +1,10 @@
+
+var console = console || {
+    log : function(){
+        return false;
+    }
+};
+
 function countDown(seconds, ProcessCallBack, EndCallBack){
   this.seconds = seconds;
   this.ProcessCallBack = ProcessCallBack;
@@ -18,7 +25,7 @@ countDown.prototype.countDownHandle = function(){
   }else{
     that.EndCallBack();
   }
-}
+};
 
 
   // var a = new countDown(10, function () {
