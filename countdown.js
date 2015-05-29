@@ -25,7 +25,7 @@ countDown.prototype.countDownHandle = function(){
   }else{
     that.EndCallBack();
   }
-}
+};
 
   // var a = new countDown(10, function (s) {
   //   console.log(s);
